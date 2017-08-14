@@ -13,5 +13,5 @@ sudo apt-get install docker-ce
 
 ## Test Docker installation on Debian 9 (Stretch)
 ```
-sudo docker run hello-world
+docker run hello-world
 ```

@@ -14,5 +14,5 @@ sudo apt-get install docker-ce
 
 ## Test Docker installation on Ubuntu 17.04 (ZestyZapus)
 ```
-sudo docker run hello-world
+docker run hello-world
 ```

@@ -13,6 +13,7 @@ Common DevOps tasks used to support SharedChain can be found here. Check the com
 ## Docker Installation
 
 * [Install Docker on Debian 9 Stretch](/how-to/install-docker-on-debian-9-stretch.md)
+* [Install Docker on Ubuntu 17.04 (ZestyZapus)](/how-to/install-docker-on-ubuntu-17-zesty-zapus.md)
 
 
 ## KVM How-To

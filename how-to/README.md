@@ -12,7 +12,7 @@ Common DevOps tasks used to support SharedChain can be found here. Check the com
 
 ## Docker Installation
 
-* [Install Docker on Debian 9 Sketch](/how-to/install-docker-on-debian-9-stretch.md)
+* [Install Docker on Debian 9 Stretch](/how-to/install-docker-on-debian-9-stretch.md)
 
 
 ## KVM How-To

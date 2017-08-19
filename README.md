@@ -2,10 +2,15 @@
 
 Common DevOps tasks used to support SharedChain can be found here. Check the commit date to help determine current relevancy. If you find outdated information the best way to report it is with a pull request.
 
+
+## Install Portainer, web-based Admin UI
+
+* [Install Portainer on Ubuntu 17.04 (ZestyZapus)](/how-to/install-portainer-docker-web-manager-ui.md)
+
+
 ## Jenkins
 
 * [Dockerized Jenkins Install w/ dedicated storage container](/to-do/dockerize-jenkins-install-dedicated-storage-container.md)
-
 
 
 ## Core Debian 9 Stretch Tasks
@@ -27,16 +32,10 @@ Common DevOps tasks used to support SharedChain can be found here. Check the com
 * [Re-Initialize (re-init) LXD on Ubuntu 17.04 (ZestyZapus)](/how-to/re-init-lxd-on-ubuntu-17-zesty-zapus.md)
 
 
-
 ## Docker Installation
 
 * [Install Docker on Debian 9 Stretch](/how-to/install-docker-on-debian-9-stretch.md)
 * [Install Docker on Ubuntu 17.04 (ZestyZapus)](/how-to/install-docker-on-ubuntu-17-zesty-zapus.md)
-
-
-## Install Portainer, web-based Admin UI
-
-* [Install Portainer on Ubuntu 10.04 (ZestyZapus)](/how-to/install-portainer-docker-web-manager-ui.md)
 
 
 ## Kurbernetes Installation

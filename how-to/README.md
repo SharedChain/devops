@@ -16,6 +16,12 @@ Common DevOps tasks used to support SharedChain can be found here. Check the com
 * [Route a static public IP address to a Guest VM - Debian 9 (Stretch)](/how-to/connect-debian-kvm-guest-to-public-ip-address.md)
 
 
+## LXD
+
+* [Install LXD on Ubuntu 17.04 (ZestyZapus)](/how-to/install-lxd-on-ubuntu-17-zesty-zapus.md)
+* [Re-Initialize (re-init) LXD on Ubuntu 17.04 (ZestyZapus)](/how-to/re-init-lxd-on-ubuntu-17-zesty-zapus.md)
+
+
 ## Docker Installation
 
 * [Install Docker on Debian 9 Stretch](/how-to/install-docker-on-debian-9-stretch.md)

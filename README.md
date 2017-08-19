@@ -2,6 +2,11 @@
 
 Common DevOps tasks used to support SharedChain can be found here. Check the commit date to help determine current relevancy. If you find outdated information the best way to report it is with a pull request.
 
+## Jenkins
+
+* [Dockerized Jenkins Install w/ dedicated storage container](/to-do/dockerize-jenkins-install-dedicated-storage-container.md)
+
+
 
 ## Core Debian 9 Stretch Tasks
 

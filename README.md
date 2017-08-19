@@ -6,12 +6,7 @@ Common DevOps tasks used to support SharedChain can be found here. Check the com
 ## Install Portainer, web-based Admin UI
 
 * [Install Portainer on Ubuntu 17.04 (ZestyZapus)](/how-to/install-portainer-docker-web-manager-ui.md)
-
-
-## Jenkins
-
-* [Dockerized Jenkins Install w/ dedicated storage container](/to-do/dockerize-jenkins-install-dedicated-storage-container.md)
-
+\
 
 ## Core Debian 9 Stretch Tasks
 

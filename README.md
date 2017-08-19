@@ -29,6 +29,11 @@ Common DevOps tasks used to support SharedChain can be found here. Check the com
 * [Install Docker on Ubuntu 17.04 (ZestyZapus)](/how-to/install-docker-on-ubuntu-17-zesty-zapus.md)
 
 
+## Install Portainer, web-based Admin UI
+
+* [Install Portainer on Ubuntu 10.04 (ZestyZapus)](/how-to/install-portainer-docker-web-manager-ui.md)
+
+
 ## Kurbernetes Installation
 
 * [Install Kubernetes on Debian 9 (Stretch)](/how-to/install-kubernetes-on-debian-9-stretch.md)

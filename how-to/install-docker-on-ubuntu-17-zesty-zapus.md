@@ -10,7 +10,10 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt-get update
 sudo apt-get install docker-ce
 ```
-
+## Add users to docker group
+```
+ sudo adduser $USER docker
+```
 
 ## Test Docker installation on Ubuntu 17.04 (ZestyZapus)
 ```

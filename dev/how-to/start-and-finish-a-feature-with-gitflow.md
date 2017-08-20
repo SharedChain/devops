@@ -2,14 +2,23 @@
 
 We will create the feature `code-coverage` in this example.
 
-# Start a feature
+
+## Start a feature
 
 ```
 git flow feature start code-coverage
 ```
 
+
 ## Finish a feature
 
 ```
 git flow feature finish code-coverage
+```
+
+
+## Publish a feature
+
+```
+git flow feature publish code-coverage
 ```

@@ -10,23 +10,25 @@ Common DevOps tasks used to support SharedChain can be found here. Check the com
 
 ## Jenkins
 
-* [Dockerized Jenkins Install w/ host mapped storage](/to-do/install-jenkins-docker-container-via-portainer.md)
-* [Jenkins CI for a Node/Loopback app - TODO](/to-do/dockerized-jenkins-ci-continuous-integration-loopback-node.md)
+* [Dockerized Jenkins Install w/ storage on host volume](/how-to/install-jenkins-docker-container-via-portainer.md)
+* [Jenkins CI for a Node/Loopback app - TODO](/how-to/dockerized-jenkins-ci-continuous-integration-loopback-node.md)
 
 
 ## Docker
 
-* [Dedicated storage container - TODO](/to-do/dedicated-storage-container.md)
+* [Dedicated storage container - TODO](/how-to/dedicated-storage-container.md)
 
 
 ## OrientDB
 
-* [Dockerize OrientDB with dedicated storage container - TODO](/to-do/dockerize-orientdb-install-dedicated-storage-container.md)
+* [Dockerize OrientDB w/ data on host volume](/how-to/dockerize-orientdb-install-on-host-volume.md)
 
 
 ## Bitcoin
 
-* [Dockerize Bitcoin with dedicated storage container - TODO](/to-do/dockerize-bitcoin-install-dedicated-storage-container.md)
+* [Dockerize Bitcoin with dedicated storage container - TODO](/how-to/dockerize-bitcoin-install-dedicated-storage-container.md)
+
+We have the standalone Bitcoin KVM so don't hold your breath for this one.
 
 
 ## Core Debian 9 Stretch Tasks

@@ -16,7 +16,6 @@ Replace `password123` with a more secure password.
 
 ```
 docker run -d --name orientdb -p 2424:2424 -p 2480:2480 \
-    -v /var/orientdb/config:/orientdb/config \
     -v /var/orientdb/databases:/orientdb/databases \
     -v /var/orientdb/backups:/orientdb/backup \
     -e ORIENTDB_ROOT_PASSWORD=password123 \

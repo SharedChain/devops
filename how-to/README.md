@@ -8,6 +8,27 @@ Common DevOps tasks used to support SharedChain can be found here. Check the com
 * [Install Portainer on Ubuntu 17.04 (ZestyZapus)](/how-to/install-portainer-docker-web-manager-ui.md)
 
 
+## Jenkins
+
+* [Dockerized Jenkins Install w/ host mapped storage](/to-do/install-jenkins-docker-container-via-portainer.md)
+* [Jenkins CI for a Node/Loopback app - TODO](/to-do/dockerized-jenkins-ci-continuous-integration-loopback-node.md)
+
+
+## Docker
+
+* [Dedicated storage container - TODO](/to-do/dedicated-storage-container.md)
+
+
+## OrientDB
+
+* [Dockerize OrientDB with dedicated storage container - TODO](/to-do/dockerize-orientdb-install-dedicated-storage-container.md)
+
+
+## Bitcoin
+
+* [Dockerize Bitcoin with dedicated storage container - TODO](/to-do/dockerize-bitcoin-install-dedicated-storage-container.md)
+
+
 ## Core Debian 9 Stretch Tasks
 
 * [Base Debian Install Initialization](/how-to/initialize-debian-barebones-install.md)

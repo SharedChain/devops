@@ -16,4 +16,12 @@ Eleastic Search - Logstash - Kibana
 ## View Kibana
 ```http://localhost:5601```
 
+## In Docker Compose
+```elk:
+  image: sebp/elk
+  ports:
+    - "5601:5601"
+    - "9200:9200"
+    - "5044:5044"```
+
 

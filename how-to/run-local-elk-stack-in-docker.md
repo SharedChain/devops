@@ -4,5 +4,16 @@ Eleastic Search - Logstash - Kibana
 ## Pull the Image
 ```sudo docker pull sebp/elk```
 
-## Run
+## Run - First time
 ```sudo docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -p 9300:9300 -it --name elk sebp/elk```
+
+## Stop
+```^C```
+
+## Restart
+```sudo docker-compose up elk```
+
+## View Kibana
+```http://localhost:5601```
+
+

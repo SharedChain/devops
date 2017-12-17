@@ -9,9 +9,10 @@ Eleastic Search - Logstash - Kibana
 
 ## Stop
 ```^C```
+```docker stop elk```
 
 ## Restart
-```sudo docker-compose up elk```
+```sudo docker start elk```
 
 ## In Docker Compose
 ```elk:
@@ -30,8 +31,11 @@ sudo docker exec -it <container-name> /bin/bash
 ## Creating logs
 Kibana needs these for the UI to work.
 
-
-
+``` /opt/logstash/bin/logstash --path.data /tmp/logstash/data \
+    -e 'input { stdin { } } output { elasticsearch { hosts => ["localhost"] } }'
+```
+Type at prompt to create logs.
+`^C` to exit.
 
 ## View Kibana
 ```http://localhost:5601```

@@ -41,3 +41,6 @@ Common DevOps tasks used to support SharedChain can be found here. Check the com
 ## SharedChain Baremetal Config
 
 ![SharedChain server stack diagram](https://github.com/SharedChain/devops/raw/master/assets/image/SharedChain-Server.png "SharedChain Server Diagram")
+
+## Sponsored By:
+[UltriNet](http://www.ultri.net)

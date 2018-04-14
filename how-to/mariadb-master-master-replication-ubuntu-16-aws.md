@@ -81,8 +81,9 @@ Edit /etc/mysql/my.cnf parameter file.
 
 `sudo vi /etc/mysql/my.cnf`
 
-Comment out `bind-address          = 127.0.0.1 `
-and add:
+Comment out `bind-address          = 127.0.0.1`
+
+Add:
 ```
 #
 # * Replication
@@ -95,4 +96,27 @@ relay_log               = /var/log/mysql/relay-bin
 relay_log_index         = /var/log/mysql/relay-bin.index
 auto_increment_increment = 5
 auto_increment_offset = 1
+```
+
+### Master Number 2
+
+Edit /etc/mysql/my.cnf parameter file.
+
+`sudo vi /etc/mysql/my.cnf`
+
+Comment out `bind-address          = 127.0.0.1`
+
+Add:
+```
+#
+# * Replication
+#
+server-id               = 20
+report_host             = master2
+log_bin                 = /var/log/mysql/mariadb-bin
+log_bin_index           = /var/log/mysql/mariadb-bin.index
+relay_log               = /var/log/mysql/relay-bin
+relay_log_index         = /var/log/mysql/relay-bin.index
+auto_increment_increment = 5
+auto_increment_offset = 2
 ```

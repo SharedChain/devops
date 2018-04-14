@@ -68,8 +68,31 @@ Cleaning up...
 All done!  If you've completed all of the above steps, your MariaDB
 installation should now be secure.
 ```
+
 ## Stop MariaDB on each
 
 ```
 sudo systemctl stop mysql
+```
+
+### Master Number 1
+
+Edit /etc/mysql/my.cnf parameter file.
+
+`sudo vi /etc/mysql/my.cnf`
+
+Comment out `bind-address          = 127.0.0.1 `
+and add:
+```
+#
+# * Replication
+#
+server-id               = 10
+report_host             = master1
+log_bin                 = /var/log/mysql/mariadb-bin
+log_bin_index           = /var/log/mysql/mariadb-bin.index
+relay_log               = /var/log/mysql/relay-bin
+relay_log_index         = /var/log/mysql/relay-bin.index
+auto_increment_increment = 5
+auto_increment_offset = 1
 ```

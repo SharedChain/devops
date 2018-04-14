@@ -100,8 +100,10 @@ auto_increment_offset = 1
 ```
 #### Edit /etc/hosts
 
+`sudo vi /etc/hosts`
+
 Add 
-```10.0.0.81 master2```
+```10.0.0.10 master2```
 
 ### Master Number 2
 
@@ -128,8 +130,10 @@ auto_increment_offset = 2
 
 #### Edit /etc/hosts
 
+`sudo vi /etc/hosts`
+
 Add 
-```10.0.0.10 master1```
+```10.0.0.81 master1```
 
 ## Add Users and Permissions
 

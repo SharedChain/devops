@@ -78,7 +78,7 @@ sudo systemctl stop mysql
 
 ### Master Number 1
 
-Edit /etc/mysql/my.cnf parameter file.
+#### Edit /etc/mysql/my.cnf parameter file.
 
 `sudo vi /etc/mysql/my.cnf`
 
@@ -98,6 +98,10 @@ relay_log_index         = /var/log/mysql/relay-bin.index
 auto_increment_increment = 5
 auto_increment_offset = 1
 ```
+#### Edit /etc/hosts
+
+Add 
+```10.0.0.81 master2```
 
 ### Master Number 2
 
@@ -122,6 +126,11 @@ auto_increment_increment = 5
 auto_increment_offset = 2
 ```
 
+#### Edit /etc/hosts
+
+Add 
+```10.0.0.10 master1```
+
 ## Add Users and Permissions
 
 ### Master Number 1
@@ -145,3 +154,43 @@ auto_increment_offset = 2
 #### Flush privileges
 
 ```flush privileges```
+
+#### Check master1 status
+
+```MariaDB [(none)]> show master status;
++--------------------+----------+--------------+------------------+
+| File               | Position | Binlog_Do_DB | Binlog_Ignore_DB |
++--------------------+----------+--------------+------------------+
+| mariadb-bin.000002 |     1916 |              |                  |
++--------------------+----------+--------------+------------------+
+```
+
+### Master Number 2
+
+#### Start MariaDB
+
+```sudo systemctl start mysql```
+
+### Login to MariaDB as root user
+
+```sudo mysql -uroot -p```
+
+#### Create replication user
+
+```create user 'dbreplication'@'%' identified by 'PASSWD';```
+
+#### Grant slave permissions to replication user
+
+```grant replication slave on *.* to 'dbreplication'@'%';```
+
+#### Flush privileges
+
+```flush privileges```
+
+#### Start Replication
+
+```
+STOP SLAVE;
+CHANGE MASTER TO MASTER_HOST='master1', MASTER_USER='dbreplication' MASTER_LOG_FILE='mariadb-bin.000002', MASTER_LOG_POS=1916;
+START SLAVE;
+```

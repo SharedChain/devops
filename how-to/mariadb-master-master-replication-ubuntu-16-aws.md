@@ -74,6 +74,7 @@ installation should now be secure.
 ```
 sudo systemctl stop mysql
 ```
+## Edit configuration files
 
 ### Master Number 1
 
@@ -120,3 +121,27 @@ relay_log_index         = /var/log/mysql/relay-bin.index
 auto_increment_increment = 5
 auto_increment_offset = 2
 ```
+
+## Add Users and Permissions
+
+### Master Number 1
+
+#### Start MariaDB
+
+```sudo systemctl start mysql```
+
+### Login to MariaDB as root user
+
+```sudo mysql -uroot -p```
+
+#### Create replication user
+
+```create user 'dbreplication'@'%' identified by 'PASSWD';```
+
+#### Grant slave permissions to replication user
+
+```grant replication slave on *.* to 'dbreplication'@'%';```
+
+#### Flush privileges
+
+```flush privileges```

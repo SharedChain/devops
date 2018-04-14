@@ -165,7 +165,7 @@ Add
 +--------------------+----------+--------------+------------------+
 | File               | Position | Binlog_Do_DB | Binlog_Ignore_DB |
 +--------------------+----------+--------------+------------------+
-| mariadb-bin.000002 |     1916 |              |                  |
+| mariadb-bin.000003 |      329 |              |                  |
 +--------------------+----------+--------------+------------------+
 ```
 
@@ -195,6 +195,6 @@ Add
 
 ```
 STOP SLAVE;
-CHANGE MASTER TO MASTER_HOST='master1', MASTER_USER='dbreplication', MASTER_LOG_FILE='mariadb-bin.000002', MASTER_LOG_POS=1916;
+CHANGE MASTER TO MASTER_HOST='master1', MASTER_USER='dbreplication', MASTER_LOG_FILE='mariadb-bin.000003', MASTER_LOG_POS=329;
 START SLAVE;
 ```

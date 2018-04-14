@@ -68,3 +68,8 @@ Cleaning up...
 All done!  If you've completed all of the above steps, your MariaDB
 installation should now be secure.
 ```
+## Stop MariaDB on each
+
+```
+sudo systemctl stop mysql
+```

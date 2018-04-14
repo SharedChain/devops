@@ -195,7 +195,7 @@ Add
 
 ```
 STOP SLAVE;
-CHANGE MASTER TO MASTER_HOST='master1', MASTER_USER='dbreplication', MASTER_PASSWORD='ong<ie{h:enoh6ied5ooneTo', MASTER_LOG_FILE='mariadb-bin.000003', MASTER_LOG_POS=329;
+CHANGE MASTER TO MASTER_HOST='master1', MASTER_USER='dbreplication', MASTER_LOG_FILE='mariadb-bin.000003', MASTER_LOG_POS=329;
 START SLAVE;
 ```
 #### Verify things are syncing

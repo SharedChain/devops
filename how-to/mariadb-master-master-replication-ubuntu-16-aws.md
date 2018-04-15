@@ -251,3 +251,74 @@ Master_SSL_Verify_Server_Cert: No
                 Parallel_Mode: conservative
 
 ```
+#### Checked master replication status on Master2
+
+```
+show master status;
++--------------------+----------+--------------+------------------+
+| File               | Position | Binlog_Do_DB | Binlog_Ignore_DB |
++--------------------+----------+--------------+------------------+
+| mariadb-bin.000003 |      629 |              |                  |
++--------------------+----------+--------------+------------------+
+```
+
+## Setup replication from master2 to master1
+
+### On Master1
+```
+STOP SLAVE;
+CHANGE MASTER TO MASTER_HOST='master2', MASTER_USER='dbreplication', MASTER_LOG_FILE='mariadb-bin.000003', MASTER_LOG_POS=629;
+START SLAVE;
+```
+
+### Check slave status
+```SHOW SLAVE STATUS\G
+*************************** 1. row ***************************
+               Slave_IO_State: Connecting to master
+                  Master_Host: master2
+                  Master_User: dbreplication
+                  Master_Port: 3306
+                Connect_Retry: 60
+              Master_Log_File: mariadb-bin.000003
+          Read_Master_Log_Pos: 629
+               Relay_Log_File: relay-bin.000001
+                Relay_Log_Pos: 4
+        Relay_Master_Log_File: mariadb-bin.000003
+             Slave_IO_Running: Connecting
+            Slave_SQL_Running: Yes
+              Replicate_Do_DB: 
+          Replicate_Ignore_DB: 
+           Replicate_Do_Table: 
+       Replicate_Ignore_Table: 
+      Replicate_Wild_Do_Table: 
+  Replicate_Wild_Ignore_Table: 
+                   Last_Errno: 0
+                   Last_Error: 
+                 Skip_Counter: 0
+          Exec_Master_Log_Pos: 629
+              Relay_Log_Space: 249
+              Until_Condition: None
+               Until_Log_File: 
+                Until_Log_Pos: 0
+           Master_SSL_Allowed: No
+           Master_SSL_CA_File: 
+           Master_SSL_CA_Path: 
+              Master_SSL_Cert: 
+            Master_SSL_Cipher: 
+               Master_SSL_Key: 
+        Seconds_Behind_Master: NULL
+Master_SSL_Verify_Server_Cert: No
+                Last_IO_Errno: 1045
+                Last_IO_Error: error connecting to master 'dbreplication@master2:3306' - retry-time: 60  maximum-retries: 86400  message: Access denied for user 'dbreplication'@'master1' (using password: NO)
+               Last_SQL_Errno: 0
+               Last_SQL_Error: 
+  Replicate_Ignore_Server_Ids: 
+             Master_Server_Id: 0
+               Master_SSL_Crl: 
+           Master_SSL_Crlpath: 
+                   Using_Gtid: No
+                  Gtid_IO_Pos: 
+      Replicate_Do_Domain_Ids: 
+  Replicate_Ignore_Domain_Ids: 
+                Parallel_Mode: conservative
+```

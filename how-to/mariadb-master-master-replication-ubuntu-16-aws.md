@@ -2,6 +2,13 @@
 
 ## Create 2 MariaDB Servers
 
+## Update System
+sudo apt-get update
+sudo apt-get dist-upgrade
+
+## Install MariaDB
+sudo apt-get install mariadb-server
+
 ### Secure each
 ```
 sudo mysql_secure_installation

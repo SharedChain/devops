@@ -6,6 +6,10 @@ Common DevOps tasks used to support SharedChain can be found here. Check the com
 
 * [Mount an EFS share before starting Nginx/PHP](/how-to/aws-mount-efs-before-nginx-php.md)
 
+## SSH
+
+* [Run a keyless SSH bastion](/how-to/keyless-ssh-bastion.md)
+
 
 ## Install Portainer, web-based Admin UI
 

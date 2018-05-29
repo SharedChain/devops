@@ -2,6 +2,10 @@
 
 Common DevOps tasks used to support SharedChain can be found here. Check the commit date to help determine current relevancy. If you find outdated information the best way to report it is with a pull request.
 
+## AWS
+
+* [Mount an EFS share before starting Nginx/PHP](/how-to/aws-mount-efs-before-nginx-php.md)
+
 
 ## Install Portainer, web-based Admin UI
 
@@ -22,6 +26,11 @@ Common DevOps tasks used to support SharedChain can be found here. Check the com
 ## OrientDB
 
 * [Dockerize OrientDB w/ data on host volume](/how-to/dockerize-orientdb-install-on-host-volume.md)
+
+
+## MariaDB
+
+* [Setup Multi-master Replication](/how-to/mariadb-master-master-replication-ubuntu-16-aws.md)
 
 
 ## Bitcoin

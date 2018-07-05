@@ -9,6 +9,8 @@ This is required when you are mounting the configs or source files on an EFS sha
 
 ## Make a temp directory to mount the EFS share 
 `sudo mkdir -p /mnt/efs/inbound-proxy-config`
+`sudo mkdir -p /mnt/efs/node-files`
+`sudo mkdir -p /mnt/efs/php-files`
 
 ## Temporarily mount EFS under a different path
 `sudo mount -t efs fs-123abc456:/ /mnt/efs/inbound-proxy-configx`

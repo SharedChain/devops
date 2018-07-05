@@ -10,6 +10,10 @@
 ```
 sudo mkdir -p /mnt/efs/inbound-proxy-config 
 sudo mkdir -p /mnt/efs/php-files
+sudo mount -t efs fs-123abc456:/ /mnt/efs/inbound-proxy-config
+sudo cp -aR /etc/nginx/* /mnt/efs/inbound-proxy-config
+sudo mount -t efs fs-152eae5d:/ /mnt/efs/php-files
+sudo cp -aR /var/www/* /mnt/efs/php-files
 ```
 
 ## PHP Server

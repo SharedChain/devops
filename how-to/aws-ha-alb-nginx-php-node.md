@@ -1,17 +1,25 @@
-Mount an EFS share before starting Nginx/PHP/Node
-This is required when you are mounting the configs or source files on an EFS share.
+## All Servers
 
-## Install NFS
+### Install NFS
 `sudo apt-get install nfs-common`
 
-## Install Amazon EFS Utilities
+### Install Amazon EFS Utilities
 `sudo apt-get install amazon-efs-utils`
 
-Make a temp directory to mount the EFS share
+## Nginx Server
 ```
 sudo mkdir -p /mnt/efs/inbound-proxy-config 
-sudo mkdir -p /mnt/efs/node-files 
 sudo mkdir -p /mnt/efs/php-files
+```
+
+## PHP Server
+```
+sudo mkdir -p /mnt/efs/php-files
+```
+
+## Node Server
+```
+sudo mkdir -p /mnt/efs/node-files 
 ```
 
 Temporarily mount EFS under a different path

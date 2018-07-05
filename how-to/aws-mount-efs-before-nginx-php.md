@@ -1,4 +1,4 @@
-# Mount an EFS share before starting Nginx/PHP
+# Mount an EFS share before starting Nginx/PHP/Node
 This is required when you are mounting the configs or source files on an EFS share.
 
 ## Install NFS
